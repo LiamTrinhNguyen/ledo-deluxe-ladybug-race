@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" width="1200" height="960" role="img" aria-label="Ludo Delux from source code to a running game. Build and release: the source code lives on GitHub. A push sends it three ways. Vercel builds and deploys the web version. GitHub Actions builds the Android app. GitHub Actions builds the iOS app on a Mac, an Apple certificate signs it, and it goes to TestFlight and App Store review. Play together: each device trades a short handshake through the mailbox on Vercel, which stores the room list in Neon. Then every device links directly to every other, and the host sends the board to all. A Cloudflare relay carries a link only when no direct path exists." font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1c140c"/></marker>
+    <path id="lane1" d="M260,240 C300,240 300,168 340,168 L981,168"/>
+    <path id="lane2" d="M260,240 C300,240 300,240 340,240 L981,240"/>
+    <path id="lane3" d="M260,240 C300,240 300,312 340,312 L981,312"/>
+    <path id="hs1" d="M180,554 C180,505 400,515 400,462"/>
+    <path id="hs2" d="M460,554 C460,505 450,515 450,462"/>
+    <path id="hs3" d="M740,554 C740,505 490,515 490,462"/>
+    <path id="hs4" d="M1020,554 C1020,505 540,515 540,462"/>
+    <path id="store" d="M600,418 L700,418"/>
+    <path id="l12" d="M198,736 C198,796 442,796 442,736"/>
+    <path id="l23" d="M478,736 C478,796 722,796 722,736"/>
+    <path id="l34" d="M758,736 C758,796 1002,796 1002,736"/>
+    <path id="l13" d="M180,736 C180,863 740,863 740,736"/>
+    <path id="l24" d="M460,736 C460,863 1020,863 1020,736"/>
+    <path id="l14" d="M162,736 C162,936 1038,936 1038,736"/>
+  </defs>
+  <rect x="1" y="1" width="1198" height="958" rx="24" fill="#f4efe6" stroke="#d9cfbf" stroke-width="2"/>
+  <text x="60" y="62" font-size="24" font-weight="700" fill="#1c140c">Ludo Delux</text>
+  <text x="60" y="88" font-size="15" fill="#6b5f52">From source code to a game on every platform</text>
+  <text x="60" y="126" font-size="12" font-weight="700" fill="#e08a4f" letter-spacing="1.5">BUILD AND RELEASE</text>
+  <use href="#lane1" fill="none" stroke="#1c140c" stroke-width="2.2" marker-end="url(#tip)"/>
+  <use href="#lane2" fill="none" stroke="#1c140c" stroke-width="2.2" marker-end="url(#tip)"/>
+  <use href="#lane3" fill="none" stroke="#1c140c" stroke-width="2.2" marker-end="url(#tip)"/>
+  <!-- A push travels down each lane -->
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.02;0.11;1"><mpath href="#lane1"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.02;0.026;0.104;0.11;1"/>
+  </circle>
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.03;0.17;1"><mpath href="#lane2"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.03;0.036;0.164;0.17;1"/>
+  </circle>
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.04;0.27;1"><mpath href="#lane3"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.04;0.046;0.264;0.27;1"/>
+  </circle>
+  <rect x="60" y="200" width="200" height="80" rx="12" fill="#1c140c"/>
+  <text x="160" y="237" font-size="15" font-weight="700" fill="#ffffff" text-anchor="middle">GitHub</text>
+  <text x="160" y="255" font-size="12" fill="#d9cfbf" text-anchor="middle">source code · git push</text>
+  <rect x="340" y="140" width="220" height="56" rx="12" fill="#ffffff" stroke="#1c140c" stroke-width="2.5"/>
+  <text x="450" y="165" font-size="15" font-weight="700" fill="#1c140c" text-anchor="middle">Vercel</text>
+  <text x="450" y="183" font-size="12" fill="#6b5f52" text-anchor="middle">builds and deploys the site</text>
+  <text x="772" y="159" font-size="12" fill="#6b5f52" text-anchor="middle">live in a minute or two</text>
+  <rect x="340" y="212" width="220" height="56" rx="12" fill="#ffffff" stroke="#1c140c" stroke-width="2.5"/>
+  <text x="450" y="237" font-size="15" font-weight="700" fill="#1c140c" text-anchor="middle">GitHub Actions</text>
+  <text x="450" y="255" font-size="12" fill="#6b5f52" text-anchor="middle">builds the Android app</text>
+  <text x="772" y="231" font-size="12" fill="#6b5f52" text-anchor="middle">download the APK and install</text>
+  <rect x="340" y="284" width="220" height="56" rx="12" fill="#ffffff" stroke="#1c140c" stroke-width="2.5"/>
+  <text x="450" y="309" font-size="15" font-weight="700" fill="#1c140c" text-anchor="middle">GitHub Actions</text>
+  <text x="450" y="327" font-size="12" fill="#6b5f52" text-anchor="middle">builds the iOS app on a Mac</text>
+  <rect x="585" y="284" width="180" height="56" rx="12" fill="#ffffff" stroke="#e08a4f" stroke-width="2.5"/>
+  <text x="675" y="309" font-size="15" font-weight="700" fill="#1c140c" text-anchor="middle">Apple certificate</text>
+  <text x="675" y="327" font-size="12" fill="#6b5f52" text-anchor="middle">signs the app</text>
+  <rect x="790" y="284" width="170" height="56" rx="12" fill="#ffffff" stroke="#e08a4f" stroke-width="2.5"/>
+  <text x="875" y="309" font-size="15" font-weight="700" fill="#1c140c" text-anchor="middle">TestFlight</text>
+  <text x="875" y="327" font-size="12" fill="#6b5f52" text-anchor="middle">then App Store review</text>
+  <rect x="985" y="140" width="155" height="56" rx="28" fill="#ffffff" stroke="#1c140c" stroke-width="2.5"/>
+  <circle cx="1013" cy="168" r="10" fill="#d64545"/>
+  <text x="1033" y="165" font-size="15" font-weight="700" fill="#1c140c">Web</text>
+  <text x="1033" y="183" font-size="12" fill="#6b5f52">any browser</text>
+  <rect x="985" y="212" width="155" height="56" rx="28" fill="#ffffff" stroke="#1c140c" stroke-width="2.5"/>
+  <circle cx="1013" cy="240" r="10" fill="#3d8c4a"/>
+  <text x="1033" y="237" font-size="15" font-weight="700" fill="#1c140c">Android</text>
+  <text x="1033" y="255" font-size="12" fill="#6b5f52">phone or tablet</text>
+  <rect x="985" y="284" width="155" height="56" rx="28" fill="#ffffff" stroke="#1c140c" stroke-width="2.5"/>
+  <circle cx="1013" cy="312" r="10" fill="#3a7bd5"/>
+  <text x="1033" y="309" font-size="15" font-weight="700" fill="#1c140c">iOS</text>
+  <text x="1033" y="327" font-size="12" fill="#6b5f52">iPhone and iPad</text>
+  <line x1="60" y1="352" x2="1140" y2="352" stroke="#d9cfbf" stroke-width="2"/>
+  <text x="60" y="384" font-size="12" font-weight="700" fill="#e08a4f" letter-spacing="1.5">PLAY TOGETHER</text>
+  <circle cx="72" cy="460" r="12" fill="#e08a4f"/><text x="72" y="465" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="92" y="465" font-size="14" font-weight="600" fill="#1c140c">Handshake: each device asks</text>
+  <text x="92" y="484" font-size="14" font-weight="600" fill="#1c140c">the mailbox who is in the room</text>
+  <rect x="340" y="380" width="260" height="76" rx="14" fill="#1c140c"/>
+  <text x="470" y="414" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Vercel</text>
+  <text x="470" y="437" font-size="13" fill="#d9cfbf" text-anchor="middle">mailbox · /api/rtc</text>
+  <use href="#store" fill="none" stroke="#1c140c" stroke-width="2.5" marker-end="url(#tip)"/>
+  <text x="650" y="408" font-size="12" fill="#6b5f52" text-anchor="middle">stores</text>
+  <rect x="700" y="380" width="260" height="76" rx="14" fill="#ffffff" stroke="#1c140c" stroke-width="2.5"/>
+  <text x="830" y="414" font-size="20" font-weight="700" fill="#1c140c" text-anchor="middle">Neon</text>
+  <text x="830" y="437" font-size="13" fill="#6b5f52" text-anchor="middle">room list · cleared in 60 s</text>
+  <use href="#hs1" fill="none" stroke="#1c140c" stroke-width="2.2" marker-start="url(#tip)" marker-end="url(#tip)"/>
+  <use href="#hs2" fill="none" stroke="#1c140c" stroke-width="2.2" marker-start="url(#tip)" marker-end="url(#tip)"/>
+  <use href="#hs3" fill="none" stroke="#1c140c" stroke-width="2.2" marker-start="url(#tip)" marker-end="url(#tip)"><animate attributeName="stroke-opacity" dur="18s" repeatCount="indefinite" values="1;0.25;0.25;1;1" keyTimes="0;0.02;0.51;0.552;1"/></use>
+  <use href="#hs4" fill="none" stroke="#1c140c" stroke-width="2.2" marker-start="url(#tip)" marker-end="url(#tip)"><animate attributeName="stroke-opacity" dur="18s" repeatCount="indefinite" values="1;0.25;0.25;1;1" keyTimes="0;0.02;0.51;0.552;1"/></use>
+  <use href="#l23" fill="none" stroke="#8d8072" stroke-width="2" stroke-linecap="round"><animate attributeName="stroke-opacity" dur="18s" repeatCount="indefinite" values="1;0.15;0.15;1;1" keyTimes="0;0.02;0.692;0.72;1"/></use>
+  <use href="#l34" fill="none" stroke="#8d8072" stroke-width="2" stroke-linecap="round"><animate attributeName="stroke-opacity" dur="18s" repeatCount="indefinite" values="1;0.15;0.15;1;1" keyTimes="0;0.02;0.692;0.72;1"/></use>
+  <use href="#l24" fill="none" stroke="#8d8072" stroke-width="2" stroke-linecap="round"><animate attributeName="stroke-opacity" dur="18s" repeatCount="indefinite" values="1;0.15;0.15;1;1" keyTimes="0;0.02;0.692;0.72;1"/></use>
+  <use href="#l12" fill="none" stroke="#1c140c" stroke-width="3.5" stroke-linecap="round"><animate attributeName="stroke-opacity" dur="18s" repeatCount="indefinite" values="1;0.15;0.15;1;1" keyTimes="0;0.02;0.454;0.482;1"/></use>
+  <use href="#l13" fill="none" stroke="#1c140c" stroke-width="3.5" stroke-linecap="round"><animate attributeName="stroke-opacity" dur="18s" repeatCount="indefinite" values="1;0.15;0.15;1;1" keyTimes="0;0.02;0.692;0.72;1"/></use>
+  <use href="#l14" fill="none" stroke="#1c140c" stroke-width="3.5" stroke-linecap="round"><animate attributeName="stroke-opacity" dur="18s" repeatCount="indefinite" values="1;0.15;0.15;1;1" keyTimes="0;0.02;0.692;0.72;1"/></use>
+  <g>
+    <rect x="112" y="560" width="136" height="170" rx="22" fill="#ffffff" stroke="#1c140c" stroke-width="3"/>
+    <rect x="160" y="570" width="40" height="7" rx="3.5" fill="#1c140c"/>
+    <circle cx="180" cy="602" r="11" fill="#d64545"/>
+    <text x="180" y="638" font-size="15" font-weight="700" fill="#1c140c" text-anchor="middle">Device 1</text>
+    <text x="180" y="657" font-size="12" fill="#6b5f52" text-anchor="middle">host · Web</text>
+    <rect x="161" y="672" width="38" height="38" rx="9" fill="#f4efe6" stroke="#1c140c" stroke-width="2"/>
+    <circle cx="171" cy="682" r="3" fill="#1c140c"/>
+    <circle cx="189" cy="700" r="3" fill="#1c140c"/>
+    <circle cx="180" cy="691" r="3" fill="#1c140c"/>
+    <circle cx="189" cy="682" r="3" fill="#1c140c"/>
+    <circle cx="171" cy="700" r="3" fill="#1c140c"/>
+  </g>
+  <g>
+    <rect x="392" y="560" width="136" height="170" rx="22" fill="#ffffff" stroke="#1c140c" stroke-width="3"/>
+    <rect x="440" y="570" width="40" height="7" rx="3.5" fill="#1c140c"/>
+    <circle cx="460" cy="602" r="11" fill="#3d8c4a"/>
+    <text x="460" y="638" font-size="15" font-weight="700" fill="#1c140c" text-anchor="middle">Device 2</text>
+    <text x="460" y="657" font-size="12" fill="#6b5f52" text-anchor="middle">guest · Android</text>
+    <rect x="441" y="672" width="38" height="38" rx="9" fill="#f4efe6" stroke="#1c140c" stroke-width="2"/>
+    <circle cx="451" cy="682" r="3" fill="#1c140c"/>
+    <circle cx="469" cy="700" r="3" fill="#1c140c"/>
+    <circle cx="460" cy="691" r="3" fill="#1c140c"/>
+  </g>
+  <g><animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="1;0.25;0.25;1;1" keyTimes="0;0.02;0.51;0.552;1"/>
+    <rect x="672" y="560" width="136" height="170" rx="22" fill="#ffffff" stroke="#1c140c" stroke-width="3"/>
+    <rect x="720" y="570" width="40" height="7" rx="3.5" fill="#1c140c"/>
+    <circle cx="740" cy="602" r="11" fill="#e2b15a"/>
+    <text x="740" y="638" font-size="15" font-weight="700" fill="#1c140c" text-anchor="middle">Device 3</text>
+    <text x="740" y="657" font-size="12" fill="#6b5f52" text-anchor="middle">joins later · iPhone</text>
+    <rect x="721" y="672" width="38" height="38" rx="9" fill="#f4efe6" stroke="#1c140c" stroke-width="2"/>
+    <circle cx="731" cy="682" r="3" fill="#1c140c"/>
+    <circle cx="749" cy="700" r="3" fill="#1c140c"/>
+    <circle cx="740" cy="691" r="3" fill="#1c140c"/>
+    <circle cx="749" cy="682" r="3" fill="#1c140c"/>
+    <circle cx="731" cy="700" r="3" fill="#1c140c"/>
+  </g>
+  <g><animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="1;0.25;0.25;1;1" keyTimes="0;0.02;0.51;0.552;1"/>
+    <rect x="952" y="560" width="136" height="170" rx="22" fill="#ffffff" stroke="#1c140c" stroke-width="3"/>
+    <rect x="1000" y="570" width="40" height="7" rx="3.5" fill="#1c140c"/>
+    <circle cx="1020" cy="602" r="11" fill="#3a7bd5"/>
+    <text x="1020" y="638" font-size="15" font-weight="700" fill="#1c140c" text-anchor="middle">Device 4</text>
+    <text x="1020" y="657" font-size="12" fill="#6b5f52" text-anchor="middle">joins later · Web</text>
+    <rect x="1001" y="672" width="38" height="38" rx="9" fill="#f4efe6" stroke="#1c140c" stroke-width="2"/>
+    <circle cx="1011" cy="682" r="3" fill="#1c140c"/>
+    <circle cx="1029" cy="700" r="3" fill="#1c140c"/>
+    <circle cx="1020" cy="691" r="3" fill="#1c140c"/>
+  </g>
+  <circle cx="318" cy="922" r="12" fill="#e08a4f"/><text x="318" y="927" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="338" y="927" font-size="14" font-weight="600" fill="#1c140c">Realtime: every device links to every other. The host sends the board to all.</text>
+  <text x="600" y="947" font-size="12" fill="#6b5f52" text-anchor="middle">A Cloudflare relay carries a link only when no direct path exists.</text>
+  <!-- Devices 1 and 2: handshake, then their link opens -->
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.321;0.363;1"><mpath href="#hs1"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.321;0.327;0.357;0.363;1"/>
+  </circle>
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.328;0.37;1"><mpath href="#hs2"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.328;0.334;0.364;0.37;1"/>
+  </circle>
+  <circle r="6" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.37;0.391;1"><mpath href="#store"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.37;0.376;0.385;0.391;1"/>
+  </circle>
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="1;1;0;0" keyTimes="0;0.391;0.433;1"><mpath href="#hs1"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.391;0.397;0.427;0.433;1"/>
+  </circle>
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="1;1;0;0" keyTimes="0;0.398;0.44;1"><mpath href="#hs2"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.398;0.404;0.434;0.44;1"/>
+  </circle>
+  <circle r="8" fill="#d64545" stroke="#ffffff" stroke-width="2" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.468;0.51;1"><mpath href="#l12"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.468;0.474;0.504;0.51;1"/>
+  </circle>
+  <!-- Devices 3 and 4 join: the same handshake -->
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.559;0.601;1"><mpath href="#hs3"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.559;0.565;0.595;0.601;1"/>
+  </circle>
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.566;0.608;1"><mpath href="#hs4"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.566;0.572;0.602;0.608;1"/>
+  </circle>
+  <circle r="6" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.608;0.629;1"><mpath href="#store"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.608;0.614;0.623;0.629;1"/>
+  </circle>
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="1;1;0;0" keyTimes="0;0.629;0.671;1"><mpath href="#hs3"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.629;0.635;0.665;0.671;1"/>
+  </circle>
+  <circle r="7" fill="#e08a4f" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="1;1;0;0" keyTimes="0;0.636;0.678;1"><mpath href="#hs4"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.636;0.642;0.672;0.678;1"/>
+  </circle>
+  <!-- The host sends the board to everyone -->
+  <circle r="8" fill="#d64545" stroke="#ffffff" stroke-width="2" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.727;0.79;1"><mpath href="#l12"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.727;0.733;0.784;0.79;1"/>
+  </circle>
+  <circle r="8" fill="#d64545" stroke="#ffffff" stroke-width="2" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.727;0.79;1"><mpath href="#l13"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.727;0.733;0.784;0.79;1"/>
+  </circle>
+  <circle r="8" fill="#d64545" stroke="#ffffff" stroke-width="2" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.727;0.79;1"><mpath href="#l14"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.727;0.733;0.784;0.79;1"/>
+  </circle>
+  <!-- Device 3 sends its move to the host -->
+  <circle r="8" fill="#e2b15a" stroke="#ffffff" stroke-width="2" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="1;1;0;0" keyTimes="0;0.811;0.867;1"><mpath href="#l13"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.811;0.817;0.861;0.867;1"/>
+  </circle>
+  <!-- The host sends the new board to everyone -->
+  <circle r="8" fill="#d64545" stroke="#ffffff" stroke-width="2" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.888;0.951;1"><mpath href="#l12"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.888;0.894;0.945;0.951;1"/>
+  </circle>
+  <circle r="8" fill="#d64545" stroke="#ffffff" stroke-width="2" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.888;0.951;1"><mpath href="#l13"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.888;0.894;0.945;0.951;1"/>
+  </circle>
+  <circle r="8" fill="#d64545" stroke="#ffffff" stroke-width="2" opacity="0">
+    <animateMotion dur="18s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;1;1" keyTimes="0;0.888;0.951;1"><mpath href="#l14"/></animateMotion>
+    <animate attributeName="opacity" dur="18s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;0.888;0.894;0.945;0.951;1"/>
+  </circle>
+</svg>
