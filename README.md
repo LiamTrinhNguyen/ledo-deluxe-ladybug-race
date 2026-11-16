@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/connection.svg" alt="How devices connect in Ludo Delux: a short handshake through Vercel and Neon, then dice and moves go directly between the players' devices" width="100%"/>
+  <img src="public/connection-2.svg" alt="How devices connect in Ludo Delux: a short handshake through Vercel and Neon, then dice and moves go directly between the players' devices" width="100%"/>
 </p>
 
 <p align="center">
