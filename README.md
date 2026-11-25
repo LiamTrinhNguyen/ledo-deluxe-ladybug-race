@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <img src="public/ludo-delux-5244x2950.png" alt="Ludo Delux" width="160"/>
   <img src="public/ludo-delux-mark.png" alt="Ludo Delux" width="160"/>
 </p>
 
