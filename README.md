@@ -1,9 +1,9 @@
 <p align="center">
+  <img src="public/ludo-delux-5244x2950.png" alt="Ludo Delux" width="160"/>
   <img src="public/connection-2.svg" alt="How devices connect in Ludo Delux: a short handshake through Vercel and Neon, then dice and moves go directly between the players' devices" width="100%"/>
 </p>
 
 <p align="center">
-  <img src="public/ludo-delux-5244x2950.png" alt="Ludo Delux" width="160"/>
   <img src="public/ludo-delux-mark.png" alt="Ludo Delux" width="160"/>
 </p>
 
