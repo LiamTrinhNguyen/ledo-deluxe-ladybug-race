@@ -1,29 +1,30 @@
 <p align="center">
-  <img src="public/ludo-delux-5244x2950.png" alt="Ludo Delux Header" width="100%"/>
-  <img src="public/connection-2.svg" alt="How devices connect in Ludo Delux: a short handshake through Vercel and Neon, then dice and moves go directly between the players' devices" width="100%"/>
-</p>
-
-<p align="center">
-  <img src="public/ludo-delux-mark.png" alt="Ludo Delux" width="160"/>
+  <img src="public/ludo-delux-5244x2950.png" alt="Ludo Delux: a ladybug race for 3 to 10 players on web, Android and iPhone" width="100%"/>
 </p>
 
 <h1 align="center">Ludo Delux</h1>
 
+<h3 align="center">A ladybug race for 3 to 10 players.<br/>Share a room code and play together on any phone or computer.</h3>
+
 <p align="center">
-  A ladybug race for 3 to 10 players.<br/>
-  Classic or Wild. Your phone keeps your name. The room only borrows a code.
+  <a href="https://ludo-delux.vercel.app"><img src="https://img.shields.io/badge/Play_now-ludo--delux.vercel.app-1c140c?style=for-the-badge" alt="Play now in your browser"/></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/LiamTrinhNguyen/ledo-deluxe-ladybug-race/issues">Ideas and suggestions</a>
+  <img src="https://img.shields.io/badge/Players-3_to_10-e08a4f" alt="3 to 10 players"/>
+  <img src="https://img.shields.io/badge/Modes-Classic_%7C_Wild-e08a4f" alt="Classic or Wild"/>
+  <img src="https://img.shields.io/badge/Platforms-Web_%7C_Android_%7C_iPhone_%7C_iPad-6b5f52" alt="Web, Android, iPhone and iPad"/>
+  <img src="https://img.shields.io/badge/No_account-No_ads-6b5f52" alt="No account, no ads"/>
+</p>
+
+<p align="center">
+  <a href="#how-a-room-connects">How it works</a>
   ·
-  <a href="#support-the-project">Sponsor</a>
+  <a href="https://github.com/LiamTrinhNguyen/ledo-deluxe-ladybug-race/issues">Ideas and suggestions</a>
   ·
   <a href="#privacy">Privacy</a>
   ·
-  <a href="https://vercel.com">Vercel</a>
-  ·
-  <a href="https://console.neon.tech">Neon Console</a>
+  <a href="#support-the-project">Sponsor</a>
 </p>
 
 <p align="center">
@@ -42,7 +43,10 @@ Play on the web, or from the iPhone build prepared for the App Store. A game aga
 
 ## How a room connects
 
-The banner at the top of this page shows the two steps.
+<p align="center">
+  <img src="public/connection-2.svg" alt="How devices connect in Ludo Delux: a short handshake through Vercel and Neon, then dice and moves go directly between the players' devices" width="100%"/>
+</p>
+
 
 1. **Handshake.** Each device asks the mailbox on Vercel who is in the room. Vercel keeps that short list in Neon and clears it within 60 seconds.
 2. **Realtime.** Every device then links directly to every other. The host applies each move and sends the board to all. Dice and moves do not pass through Vercel or Neon.
