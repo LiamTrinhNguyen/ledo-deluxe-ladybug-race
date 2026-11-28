@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/ladybug-ludo-mark.png" alt="Ladybug Ludo" width="160"/>
+  <img src="public/ludo-delux-5244x2950.png" alt="Ladybug Ludo: a ladybug race for 3 to 10 players on web, Android and iPhone" width="100%"/>
 </p>
 
 <h1 align="center">Ladybug Ludo</h1>
@@ -10,6 +10,8 @@
 </p>
 
 <p align="center">
+  <a href="#how-a-room-connects">How it works</a>
+  ·
   <a href="https://github.com/LiamTrinhNguyen/ledo-deluxe-ladybug-race/issues">Ideas and suggestions</a>
   ·
   <a href="#privacy">Privacy</a>
@@ -36,6 +38,19 @@ Play on the web, or from the iPhone and Android builds. A game against machine p
 
 > Ladybug Ludo was called **Ludo Delux** before. The name changed because "Ludo Deluxe" is already a common name for editions of the board game.
 
+## How a room connects
+
+<p align="center">
+  <img src="public/connection-2.svg" alt="How devices connect in Ladybug Ludo: a short handshake through Vercel and Neon, then dice and moves go directly between the players' devices" width="100%"/>
+</p>
+
+1. **Handshake.** Each device asks the mailbox on Vercel who is in the room. Vercel keeps that short list in Neon and clears it within 60 seconds.
+2. **Realtime.** Every device then links directly to every other, over an encrypted connection. Each device proves which seat it is, the host applies each move and sends the board to all, and every device checks each update before showing it. Dice and moves do not pass through Vercel or Neon.
+
+When two devices cannot reach each other directly, a Cloudflare relay carries that one link. The traffic stays encrypted.
+
+If the host's phone goes to sleep or drops out, the next player takes over as host and the game carries on.
+
 ## Stack
 
 | Piece | Where |
@@ -45,6 +60,7 @@ Play on the web, or from the iPhone and Android builds. A game against machine p
 | Hosting | [Vercel](https://vercel.com) |
 | Temporary room data | [Neon](https://neon.tech) Postgres |
 | After the handshake | An encrypted direct connection (WebRTC) between the players' devices |
+| When no direct path exists | Cloudflare relay |
 
 The source code is private. This repository holds the public description, the policy, and the issue list.
 
@@ -102,7 +118,7 @@ Questions about this policy: [Liamtrinhnguyen@gmail.com](mailto:Liamtrinhnguyen@
 
 **Ladybug Ludo** © 2026 Liam TrinhNguyen. All rights reserved.
 
-- **The logo** (`public/ladybug-ludo-mark.png`) is the author's own design.
+- **The logo** (`public/ladybug-ludo-mark.png`) is the author's own design, as are the banner (`public/ludo-delux-5244x2950.png`) and the connection diagrams (`public/connection.svg`, `public/connection-2.svg`).
 - **The background music**, "Ladybug Garden", was composed for this app and generated in code, with no samples or recordings from anyone else.
 - **The artwork** (the ladybug tokens, the board designs for 3 to 10 players, the wild-item icons), **the source code**, and the English and Vietnamese text are all original work.
 
