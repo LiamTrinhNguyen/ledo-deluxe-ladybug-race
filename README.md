@@ -1,78 +1,52 @@
 <p align="center">
-  <img src="public/ludo-delux-5244x2950.png" alt="Ludo Delux: a ladybug race for 3 to 10 players on web, Android and iPhone" width="100%"/>
+  <img src="public/ladybug-ludo-mark.png" alt="Ladybug Ludo" width="160"/>
 </p>
 
-<h1 align="center">Ludo Delux</h1>
-
-<h3 align="center">A ladybug race for 3 to 10 players.<br/>Share a room code and play together on any phone or computer.</h3>
+<h1 align="center">Ladybug Ludo</h1>
 
 <p align="center">
-  <a href="https://ludo-delux.vercel.app"><img src="https://img.shields.io/badge/Play_now-ludo--delux.vercel.app-1c140c?style=for-the-badge" alt="Play now in your browser"/></a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Players-3_to_10-e08a4f" alt="3 to 10 players"/>
-  <img src="https://img.shields.io/badge/Modes-Classic_%7C_Wild-e08a4f" alt="Classic or Wild"/>
-  <img src="https://img.shields.io/badge/Platforms-Web_%7C_Android_%7C_iPhone_%7C_iPad-6b5f52" alt="Web, Android, iPhone and iPad"/>
-  <img src="https://img.shields.io/badge/No_account-No_ads-6b5f52" alt="No account, no ads"/>
+  A ladybug race for 3 to 10 players.<br/>
+  Classic or Wild. Your phone keeps your name. The room only borrows a code.
 </p>
 
 <p align="center">
-  <a href="#how-a-room-connects">How it works</a>
-  ·
   <a href="https://github.com/LiamTrinhNguyen/ledo-deluxe-ladybug-race/issues">Ideas and suggestions</a>
   ·
   <a href="#privacy">Privacy</a>
   ·
-  <a href="#support-the-project">Sponsor</a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/sponsors/LiamTrinhNguyen"><img src="https://img.shields.io/badge/Sponsor-%E2%9D%A4-e08a4f?logo=githubsponsors&logoColor=white" alt="Sponsor Liam TrinhNguyen on GitHub"/></a>
+  <a href="#copyright">Copyright</a>
 </p>
 
 ---
 
 ## What it is
 
-Ludo Delux is a clockwise race. Each seat has four ladybugs. A 6 leaves the yard. The die must match the distance to send another colour home. Walking past does nothing. Two of one colour on a normal square make a fortress. Twenty seconds a turn.
+Ladybug Ludo is a clockwise race. Each seat has four ladybugs, and the first player to bring all four home wins.
 
-Wild adds a rocket, a black hole, a golden die, and suffer. The host can turn each one off before the game starts.
+- **Leaving the base.** You need a 6 to bring a ladybug out of its base, and every 6 gives you another roll. Three unused 6s in one turn end it.
+- **Sending home.** Land exactly on another colour to send it back to its base and roll again. Passing over it does nothing.
+- **Safe squares.** S (your start) and O are safe. X is the last square before your home lane, and it is not safe.
+- **Blocks.** Two ladybugs of one colour on a normal square form a block. Nobody may land there, and the pair can't be sent home.
+- **Finishing.** A ladybug must reach the centre with an exact count along its coloured home lane. The centre shows how many of yours are home.
+- **The clock.** Twenty seconds for each roll and each move. If time runs out, the game plays for you.
 
-Play on the web, or from the iPhone build prepared for the App Store. A game against machine players never leaves the device. A room with other people connects the phones directly after a short handshake.
+**Wild mode** adds four items to the track: a **jump spring** (1 to 8 squares forward), a **black hole** (1 to 8 squares back), a **golden die** (a saved 6 for later), and **suffer** (shuffles every ladybug on the main track). The host can turn each one off before the game starts.
 
-## How a room connects
+Play on the web, or from the iPhone and Android builds. A game against machine players never leaves the device. A room with other people connects the devices directly after a short handshake. Rules, buttons and messages come in English and Vietnamese, with light and dark looks and original background music.
 
-<p align="center">
-  <img src="public/connection-2.svg" alt="How devices connect in Ludo Delux: a short handshake through Vercel and Neon, then dice and moves go directly between the players' devices" width="100%"/>
-</p>
-
-
-1. **Handshake.** Each device asks the mailbox on Vercel who is in the room. Vercel keeps that short list in Neon and clears it within 60 seconds.
-2. **Realtime.** Every device then links directly to every other. The host applies each move and sends the board to all. Dice and moves do not pass through Vercel or Neon.
-
-When two devices cannot reach each other directly, a Cloudflare relay carries that one link. The traffic stays encrypted.
+> Ladybug Ludo was called **Ludo Delux** before. The name changed because "Ludo Deluxe" is already a common name for editions of the board game.
 
 ## Stack
 
 | Piece | Where |
 |---|---|
 | App | TypeScript, React, Vite |
-| Phone build | Capacitor |
+| Phone builds | Capacitor (iOS and Android) |
 | Hosting | [Vercel](https://vercel.com) |
-| Temporary room data | [Neon](https://console.neon.tech) Postgres |
-| After the handshake | Direct connection between the players' devices |
-| When no direct path exists | Cloudflare relay |
+| Temporary room data | [Neon](https://neon.tech) Postgres |
+| After the handshake | An encrypted direct connection (WebRTC) between the players' devices |
 
-## Support the project
-
-Ludo Delux is a personal project. It has no ads and nothing to buy. Some of the pieces that keep it running cost money: the hosting, the database, the relay that helps phones on difficult networks connect, and the developer account needed to publish the iPhone app.
-
-If you enjoy the game and want to help keep it online, you can sponsor it here:
-
-**[github.com/sponsors/LiamTrinhNguyen](https://github.com/sponsors/LiamTrinhNguyen)**
-
-Any amount helps, and it goes to those running costs first. Thank you.
+The source code is private. This repository holds the public description, the policy, and the issue list.
 
 ## Ideas and suggestions
 
@@ -82,17 +56,17 @@ Use that list for a rule that feels wrong, a board that does not fit the phone, 
 
 ## Privacy
 
-Last updated: November 15, 2026.
+Last updated: November 28, 2026.
 
-The App Store listing points at this same policy, also shown in the app at `/privacy`.
+The App Store and Google Play listings point at this same policy, which is also shown in the app at `/privacy`.
 
 ### Summary
 
-Ludo Delux has no accounts, no advertising, and no analytics. We do not sell or share personal information.
+Ladybug Ludo has no accounts, no advertising, and no analytics. We do not sell or share personal information.
 
 ### What stays on your device
 
-The name you type and a random id for your device are saved on your device only, so the game can remember you next time. A game against machine players never leaves your device.
+The name you type, a random id for your device, and your Dark and Music settings are saved on your device only, so the game can remember them next time. A game against machine players never leaves your device.
 
 ### What happens when you join a room
 
@@ -100,20 +74,42 @@ To connect players, our server briefly holds the room code, a temporary random c
 
 After that, the game runs directly between the players' devices. Your name, your device id, and your moves are sent to the other players in your room, and their devices can see your network address, as with any direct connection. Our server does not receive them.
 
-When two devices cannot reach each other directly, their connection is carried by a relay run by Cloudflare. The relay passes the encrypted traffic along and cannot read your name or your moves.
+### How the connection is kept secure
+
+- Your device talks to our server only over HTTPS. The game between players runs over WebRTC, which always encrypts it (DTLS), so nobody between the devices can read or change the moves.
+- Only people who have your room code can join your room. Share it only with the people you want to play with.
+- Each device proves which seat it is when it connects. A roll or a move is accepted only from the player whose turn it is, and only the room owner can change the board or the mode, or start the game, so one player cannot act for another.
+- Every game update from another device is checked before it is shown, and anything malformed is ignored.
+- When no direct path exists between two devices, the game can pass the encrypted connection through a relay run by Cloudflare. The relay cannot read it.
 
 ### Services we rely on
 
-The game is hosted by [Vercel](https://vercel.com) and uses a [Neon](https://console.neon.tech) database for the temporary room data above. STUN and relay servers run by Google and Cloudflare help devices find and reach each other, and fonts are loaded from Google Fonts. Like any internet service, these providers see the network address of devices that contact them.
+The game is hosted by [Vercel](https://vercel.com) and uses a [Neon](https://neon.tech) database for the temporary room data above. Public STUN servers run by Google and Cloudflare help devices find each other, and Cloudflare may relay a connection as described above. Like any internet service, these providers see the network address of devices that contact them. The fonts and music are part of the app, so nothing is loaded from Google Fonts or any other outside site.
 
 ### Children
 
 The game does not ask for or knowingly collect personal information from anyone, including children.
 
+### Changes
+
+If this policy changes, the new version will be posted here with a new date.
+
 ### Contact
 
 Questions about this policy: [Liamtrinhnguyen@gmail.com](mailto:Liamtrinhnguyen@gmail.com)
 
+## Copyright
+
+**Ladybug Ludo** © 2026 Liam TrinhNguyen. All rights reserved.
+
+- **The logo** (`public/ladybug-ludo-mark.png`) is the author's own design.
+- **The background music**, "Ladybug Garden", was composed for this app and generated in code, with no samples or recordings from anyone else.
+- **The artwork** (the ladybug tokens, the board designs for 3 to 10 players, the wild-item icons), **the source code**, and the English and Vietnamese text are all original work.
+
+None of these may be copied, changed, or reused without the author's written permission. The name "Ladybug Ludo" and the logo identify this app; please don't use them for another game, app, or product. See [COPYRIGHT.md](COPYRIGHT.md).
+
+Ludo itself is a traditional board game descended from Pachisi, and its basic rules belong to no one. The app is built with open-source software and fonts (Fraunces and Outfit, SIL Open Font License), which keep their own licences.
+
 ---
 
-Built by [Liam TrinhNguyen](https://github.com/LiamTrinhNguyen). If the game made you smile, [sponsoring](https://github.com/sponsors/LiamTrinhNguyen) helps keep it running.
+Built by [Liam TrinhNguyen](https://github.com/LiamTrinhNguyen).
